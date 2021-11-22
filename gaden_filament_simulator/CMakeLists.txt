@@ -20,7 +20,7 @@ catkin_package(
 
 include_directories(include)
 
-include_directories(${catkin_INCLUDE_DIRS} $(PCL_INCLUDE_DIRS) ${OpenCV_INCLUDE_DIRS})
+include_directories(${catkin_INCLUDE_DIRS} ${PCL_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS})
 MESSAGE("PCL ARE: ${PCL_INCLUDE_DIRS}")
 
 FILE(GLOB_RECURSE MYFILES_CPP "src/*.cpp")
@@ -29,4 +29,5 @@ add_executable(filament_simulator ${MYFILES_CPP})
 target_link_libraries(filament_simulator
    ${catkin_LIBRARIES}
    ${OpenCV_LIBRARIES}
+   ${PCL_LIBRARIES}
  )

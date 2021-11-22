@@ -1,4 +1,4 @@
-solid Onshape
+robot Onshape
   facet normal 0 0 -1
     outer loop
       vertex -1.11022e-15 2.9 0.7
