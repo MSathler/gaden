@@ -1,4 +1,4 @@
-robot AssimpScene
+solid AssimpScene
  facet normal 1 0 0
   outer loop
   vertex 0.2 -0.5 3

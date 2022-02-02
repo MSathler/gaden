@@ -131,8 +131,8 @@ floorMap                     # load an environment bitmap
   name "SimulatedMap"
   
   bitmap "../../occupancy.pgm"
-  size [11.0 12.0 3.00]           #m  
-  pose [ 0.0 0.0 0.000 0.000 ]    #Coordinates (m) of the Center of the image_map
+  size [5.870 10.14 3.00]           #m  
+  pose [ 2.5 4.9 0.000 0.000 ]    #Coordinates (m) of the Center of the image_map
 )
 
 # throw in a robot

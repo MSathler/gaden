@@ -19,6 +19,8 @@
 #include <time.h>
 #include <map>
 
+
+#include <boost/format.hpp>
 #include <boost/iostreams/filter/zlib.hpp>
 #include <boost/iostreams/filtering_stream.hpp>
 #include <boost/algorithm/string.hpp>

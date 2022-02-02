@@ -26,8 +26,9 @@
     </node>
 
     <!--### URDF MODEL ###
-    <param name="robot_description" textfile="$(find test_env)/$(arg scenario)/launch/ros/giraff.urdf" />-->
-    <param name="robot_description" textfile="/home/itv/espeleo_ws/src/espeleo_description/urdf/espeleo_xacro/espeleo2.xacro" />
+    <param name="robot_description" textfile="/home/itv/espeleo_ws/src/espeleo_description/urdf/espeleo_xacro/espeleo2.xacro" />-->
+    <param name="robot_description" textfile="$(find test_env)/$(arg scenario)/launch/ros/giraff.urdf" />
+    
     <param name="use_gui" value="False"/>
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
 
@@ -79,7 +80,7 @@
     <!--### NODE PLAYER ###-->
     <node pkg="gaden_player" type="gaden_player" name="gaden_player" output="screen">
         <param name="verbose" value="false" />
-	<param name="player_freq" value="2" />         <!--###(Hz) Freq for loading the simulation log_files-->
+	<param name="player_freq" value="200" />         <!--###(Hz) Freq for loading the simulation log_files-->
 	<param name="initial_iteration" value="0" />
 	<param name="num_simulators" value="1" />     <!-- ### Number of simulations to load [1-inf] (useful for multiple sources andgases)--> 
     
@@ -88,8 +89,8 @@
         
         <!--# Loop options -->       
         <param name="allow_looping" value="true" />
-        <param name="loop_from_iteration" value="150" />
-        <param name="loop_to_iteration" value="499" />
+        <param name="loop_from_iteration" value="499" />
+        <param name="loop_to_iteration" value="499" /> <!--150 499-->
         
     </node>
   

@@ -8,8 +8,7 @@ find_package(catkin REQUIRED COMPONENTS
     nav_msgs
     olfaction_msgs
     tf
-    gaden_player
-)
+    gaden_player)
 
 
 FILE(GLOB_RECURSE MYFILES_CPP "src/*.cpp")

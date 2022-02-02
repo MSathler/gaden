@@ -1,5 +1,9 @@
 # [GADEN](http://mapir.isa.uma.es/work/gaden)
+
+**Fork modified and working on ubuntu 20.04 ROS noetic**
+
 **A 3D Gas Dispersion Simulator for Mobile Robot Olfaction in Realistic Environments**
+- Added new environments (nasa, lab)
 
 GADEN is a simulation framework designed for mobile robotics systems and gas sensing algorithms, also known as Mobile Robotics Olfaction (MRO). The framework is rooted in the principles of computational fluid dynamics and filament dispersion theory, modeling wind flow and gas dispersion in 3D scenarios and accounting for walls, furniture, and other objects that may have a significative impact on the gas dispersion.
 Moreover, it integrates the simulation of different environmental sensors, such as metal oxide gas sensors, photo-ionization 

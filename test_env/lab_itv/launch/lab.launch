@@ -5,8 +5,8 @@
 <launch>
     <arg name="scenario" default="lab_itv" />
     <arg name="simulation" default="W1" />
-    <arg name="source_location_x" default="1.00" />
-    <arg name="source_location_y" default="1.00" />
+    <arg name="source_location_x" default="2.4" />
+    <arg name="source_location_y" default="4.00" />
     <arg name="source_location_z" default="0.50" />
     
     <!-- NODE environment (for RVIZ visualization) -->
@@ -51,7 +51,7 @@
         <param name="filament_growth_gamma" value="10"/>        <!-- ### [cm²/s] Growth ratio of the filament_std-->
         <param name="filament_noise_std" value="0.02"/>         <!-- ### [m] Range of the white noise added on each iteration-->
 	    <param name="gas_type" value="0" />                      <!--### 0=Ethanol, 1=Methane, 2=Hydrogen, 6=Acetone-->
-	    <param name="temperature" value="298"/>                  <!--### [Kelvins]-->
+	    <param name="temperature" value="303"/>                  <!--### [Kelvins]-->
 	    <param name="pressure" value="1"/>                       <!--### [Atm]-->
 	    <param name="concentration_unit_choice" value="1"/>      <!--### 0=molecules/cm3, 1=ppm (when ppm is used, set temp and pressure accordingly)	    	    	    	    
 	    # In the occupancyGrid.csv file we set: cell_size, num_cells, etc. which come from the CFD wind simulation-->
@@ -60,7 +60,7 @@
 	    
 	    <!--# WindFlow data (from CFD)-->
 	    <param name="wind_data" value="$(find test_env)/$(arg scenario)/wind_simulations/$(arg simulation)/lab_" />
-	    <param name="wind_time_step" value="1" />                <!--### (sec) time increment between Wind snapshots-->
+	    <param name="wind_time_step" value="100" />                <!--### (sec) time increment between Wind snapshots-->
 	    <!--# Loop options-->
         <param name="/allow_looping" value="true" />
         <param name="/loop_from_step" value="0" />
